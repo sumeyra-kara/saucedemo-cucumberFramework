@@ -20,6 +20,12 @@ public class LoginPage extends BasePage {
         loginBtn.click();
     }
 
+    @FindBy(xpath = "//h3[@data-test='error']")
+    public WebElement errorMessage;
+
+
+
+
 
 
 }

@@ -27,4 +27,12 @@ public class Login_StepDefs {
     public void verify_that_user_can_see_on_the_dashboard(String expectedTitle) {
         Assert.assertEquals(expectedTitle,dashboardPage.title.getText());
     }
+
+    @Then("verify that user can see {string}")
+    public void verify_that_user_can_see(String expectedMessage) {
+        Assert.assertEquals(expectedMessage,loginPage.errorMessage.getText());
+    }
+
+
+
 }
