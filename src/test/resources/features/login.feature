@@ -13,7 +13,7 @@ Feature: Login Functionality
       | performance_glitch_user | secret_sauce |
       | problem_user            | secret_sauce |
 
-  @wip
+
   Scenario Outline: negative login test wit DDT
     Given user is on the login page
     When user enters "<username>" username "<password>" password and clicks on the login button
